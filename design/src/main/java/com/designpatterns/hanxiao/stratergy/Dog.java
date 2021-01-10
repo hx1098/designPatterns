@@ -15,14 +15,10 @@ public class Dog  implements  Comparable<Dog>{
     }
 
     @Override
-    public int compareTo(Dog g) {
-        if(this.food < g.food){
-            return -1;
-        }else if(this.food > g.food) {
-            return 1;
-        }else {
-            return 0;
-        }
+    public int compareTo(Dog d) {
+        if(this.food < d.food) return -1;
+        else if(this.food > d.food) return 1;
+        else return 0;
     }
 
     @Override

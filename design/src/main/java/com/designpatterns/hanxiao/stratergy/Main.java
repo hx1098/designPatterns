@@ -12,10 +12,12 @@ public class Main {
 
     public static void main(String[] args) {
 //        int[] arr = {8,4,9,0,2,6};
-//        Cat[] a = {new Cat(5,5),new Cat(3,3),new Cat(2, 2)};
-        Dog[] a = {new Dog(1),new Dog(3),new Dog(2)};
-        Sorter sorter = new Sorter();
-        sorter.sort(a);
+        Cat[] a = {new Cat(5,5),new Cat(3,3),new Cat(2, 2)};
+//        Dog[] a = {new Dog(1),new Dog(3),new Dog(2)};
+//
+//        Sorter<Dog>  sorter = new Sorter<>();
+        Sorter<Cat>  sorter = new Sorter<>();
+        sorter.sort(a,new CatComparator());
         System.out.println(Arrays.toString(a));
     }
 
