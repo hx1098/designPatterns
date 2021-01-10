@@ -15,6 +15,10 @@ public class Main {
 */
         Moveable m = new Car();
 
+        /*直接创建car就行*/
+        Moveable m2 = new CarFacroty().createCar();
+
+
     }
 
 }
