@@ -1,4 +1,4 @@
-package com.designpatterns.hanxiao.stratergy;
+package com.designpatterns.hanxiao.T_02_stratergy;
 
 /**
  * @author hx

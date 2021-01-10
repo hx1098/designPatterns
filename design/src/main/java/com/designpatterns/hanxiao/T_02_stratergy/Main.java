@@ -1,4 +1,4 @@
-package com.designpatterns.hanxiao.stratergy;
+package com.designpatterns.hanxiao.T_02_stratergy;
 
 import java.util.Arrays;
 
@@ -17,7 +17,12 @@ public class Main {
 //
 //        Sorter<Dog>  sorter = new Sorter<>();
         Sorter<Cat>  sorter = new Sorter<>();
-        sorter.sort(a,new CatComparator());
+//        sorter.sort(a,new CatComparator());
+        sorter.sort(a,(o1,o2)->{
+            if (o1.weight > o2.weight) return -1;
+            else if(o1.weight < o2.weight) return 1;
+            else return 0;
+        });
         System.out.println(Arrays.toString(a));
     }
 

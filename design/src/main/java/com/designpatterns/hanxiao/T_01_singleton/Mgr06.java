@@ -1,4 +1,4 @@
-package com.designpatterns.hanxiao.singleton;
+package com.designpatterns.hanxiao.T_01_singleton;
 
 /**
  * @author hx
